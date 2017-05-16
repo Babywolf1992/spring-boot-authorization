@@ -6,6 +6,7 @@ import com.babywolf.domain.User;
 import com.babywolf.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.context.request.RequestAttributes;
@@ -16,6 +17,7 @@ import org.springframework.web.multipart.support.MissingServletRequestPartExcept
 /**
  * Created by babywolf on 17/5/16.
  */
+@Component
 public class CurrentUserMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
     @Autowired
